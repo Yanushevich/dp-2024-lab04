@@ -12,11 +12,11 @@ def main():
     # Проверим данные в цифровом формате
     print(digital_clock.get_date_time())
     # Проверим данные в аналоговом формате
-    print(analog_clock.get_year(), analog_clock.get_month(), analog_clock.get_day())
-    print(analog_clock.get_hour_angle())
-    print(analog_clock.get_minute_angle())
-    print(analog_clock.get_second_angle())
-    print(analog_clock.day_night_division)
+    print("Дата -", analog_clock.get_year(), analog_clock.get_month(), analog_clock.get_day())
+    print(f"Угол часовой стрелки - {analog_clock.get_hour_angle()}")
+    print(f"Угол минутной стрелки - {analog_clock.get_minute_angle()}")
+    print(f"Угол секундной стрелки - {analog_clock.get_second_angle()}")
+    print(f"Время суток (AM/PM) - {analog_clock.day_night_division.value}")
 
 
 if __name__ == "__main__":

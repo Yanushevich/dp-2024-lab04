@@ -68,7 +68,7 @@ class DigitalClockAdapter(BaseDigitalClock):
         """
         return int(self._analog_clock.get_second_angle() // 6)
 
-    def get_day_night_division(self):
+    def get_day_night_division(self) -> DayNightDivision:
         """
         Возвращает время суток
 
