@@ -68,3 +68,10 @@ class BaseAnalogClock(ABC):
         Возвращает текущий день (от установленного пользователем)
         """
         raise NotImplementedError()
+
+    @abstractmethod
+    def get_day_night_division(self) -> DayNightDivision:
+        """
+        Возвращает текущее время суток (от установленного пользователем)
+        """
+        raise NotImplementedError()
